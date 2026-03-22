@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>ZOOna. Кошки</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__container">
+            <span class="header__logo">
+                <img src="img/logo.jpg" alt="ZOOna-товары для животных">
+            </span>
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header__home desktop-only">
+                <a href="index.html">
+                    <img src="img/home.png" alt="Главная">
+                </a>
+            </div>
+            <div class="header__search desktop-only">
+                <input type="text" 
+                    id="searchInputDesktop" 
+                    placeholder="Я ищу..."
+                    autocomplete="off"
+                    readonly>
+            </div>
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                            id="searchInputMain" 
+                            placeholder="Введите название товара..."
+                            autocomplete="off">
+                        <button type="button" class="search-close" id="searchCloseBtn">
+                            ✕
+                        </button>
+                    </form>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+
+            <div class="header__user-container promotion desktop-only">
+                <a href="promotion.html">
+                    <img src="img/sales.png" alt="акции">
+                    <span>Акции</span>
+                </a>
+            </div>
+
+            <div class="header__account desktop-only">
+                <a href="account.html">
+                    <img src="img/account.png" alt="Личный кабинет">
+                    <span>Личный кабинет</span>
+                </a>
+            </div>
+
+            <div class="header__user-container cart desktop-only">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="корзина">
+                    <span>Корзина <span class="cart-count">0</span></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__content">
+
+                <div class="mobile-search">
+                    <input type="text" id="searchInputMobile" placeholder="Поиск товаров...">
+                    <button id="mobileSearchBtn">
+                        <img src="img/search.png" alt="поиск">
+                    </button>
+                </div>
+
+                <div class="mobile-user-links">
+                    <a href="index.html" class="mobile-user-link">
+                        <img src="img/home.png" alt="Главная">
+                        <span>Главная</span>
+                    </a>
+                    <a href="promotion.html" class="mobile-user-link">
+                        <img src="img/sales.png" alt="акции">
+                        <span>Акции</span>
+                    </a>
+                    <a href="account.html" class="mobile-user-link">
+                        <img src="img/account.png" alt="Личный кабинет">
+                        <span>Личный кабинет</span>
+                    </a>
+                    <a href="cart.html" class="mobile-user-link">
+                        <img src="img/cart.png" alt="корзина">
+                        <span>Корзина <span class="cart-count">0</span></span>
+                    </a>
+                </div>
+
+                <div class="mobile-categories">
+                    <a href="dog.html" class="mobile-category">
+                        <img src="img/icon-dog.jpg" alt="собаки">
+                        <span>Собаки</span>
+                    </a>
+                    <a href="cat.html" class="mobile-category">
+                        <img src="img/icon-cat.jpg" alt="кошки">
+                        <span>Кошки</span>
+                    </a>
+                    <a href="bird.html" class="mobile-category">
+                        <img src="img/icon-bird.jpg" alt="птицы">
+                        <span>Птицы</span>
+                    </a>
+                    <a href="rodent.html" class="mobile-category">
+                        <img src="img/icon-rodent.jpg" alt="грызуны">
+                        <span>Грызуны</span>
+                    </a>
+                    <a href="fish.html" class="mobile-category">
+                        <img src="img/icon-fish.jpg" alt="рыбки">
+                        <span>Рыбки</span>
+                    </a>
+                    <a href="pharmacy.html" class="mobile-category">
+                        <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                        <span>Ветаптека</span>
+                    </a>
+                </div>
+
+                <div class="mobile-contacts">
+                    <div class="mobile-phone">7788</div>
+                    <div class="mobile-contact">МТС: +375 (33) 333-33-33</div>
+                    <div class="mobile-email">zoona@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu__container desktop-only">
+        <div class="menu__dog">
+            <a href="dog.html">
+                <img src="img/icon-dog.jpg" alt="собаки">
+                <span>Собаки</span>
+            </a>
+        </div>
+        <div class="menu__cat">
+            <a href="cat.html">
+                <img src="img/icon-cat.jpg" alt="кошки">
+                <span>Кошки</span>
+            </a>
+        </div>
+        <div class="menu__bird">
+            <a href="bird.html">
+                <img src="img/icon-bird.jpg" alt="птицы">
+                <span>Птицы</span>
+            </a>
+        </div>
+        <div class="menu__rodent">
+            <a href="rodent.html">
+                <img src="img/icon-rodent.jpg" alt="грызуны">
+                <span>Грызуны</span>
+            </a>
+        </div>
+        <div class="menu__fish">
+            <a href="fish.html">
+                <img src="img/icon-fish.jpg" alt="рыбки">
+                <span>Рыбки</span>
+            </a>
+        </div>
+        <div class="menu__pharmacy">
+            <a href="pharmacy.html">
+                <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                <span>Ветаптека</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main__cat-food">
+            <div class="main__cat-food__label">
+                <div class="category-box">Корм</div>
+            </div>
+            <div class="main__cat-food__catalog">
+                <div class="cat-food__acana">
+                    <img src="img/cat-food__acana.jpg" alt="acana">
+                    <span>Сухой корм ACANA Wild Prairie Cat 4,5 кг</span>
+                    <strong>194,85 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="acana-cat-food"
+                        data-name="ACANA Wild Prairie Cat 4,5 кг"
+                        data-price="194.85"
+                        data-image="img/cat-food__acana.jpg">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="cat-food__royalcanin">
+                    <img src="img/cat-food__royalcanin.jpg" alt="royalcanin">
+                    <span>Сухой корм Royal Canin Kitten 4,0 кг</span>
+                    <strong>85,18 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="royalcanin-kitten"
+                        data-name="Royal Canin Kitten 4,0 кг"
+                        data-price="85.18"
+                        data-image="img/cat-food__royalcanin.jpg">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="cat-food__perfectfit">
+                    <img src="img/cat-food__perfectfit.jpg" alt="perfectfit">
+                    <span>Сухой корм Perfect Fit 0,65 кг</span>
+                    <strong>53,13 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="perfectfit-cat-food"
+                        data-name="Perfect Fit 0,65 кг"
+                        data-price="53.13"
+                        data-image="img/cat-food__perfectfit.jpg">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="cat-food__ambrosia">
+                    <img src="img/cat-food__ambrosia.jpg" alt="ambrosia">
+                    <span>Сухой корм AMBROSIA для выращивания котят</span>
+                    <strong>51,51 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="ambrosia-kitten"
+                        data-name="AMBROSIA для котят"
+                        data-price="51.51"
+                        data-image="img/cat-food__ambrosia.jpg">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="cat-food__alphapet">
+                    <img src="img/cat-food__alphapet.jpg" alt="alphapet">
+                    <span>Сухой корм AlphaPet Wow Superpremium 0,75 кг</span>
+                    <strong>45,01 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="alphapet-superpremium"
+                        data-name="AlphaPet Wow Superpremium 0,75 кг"
+                        data-price="45.01"
+                        data-image="img/cat-food__alphapet.jpg">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="cat-food__trendline">
+                    <img src="img/cat-food__trendline.jpg" alt="trendline">
+                    <span>Сухой корм Trendline Adult Cat Chicken 1,0 кг</span>
+                    <strong>67,76 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="trendline-adult-cat"
+                        data-name="Trendline Adult Cat Chicken 1,0 кг"
+                        data-price="67.76"
+                        data-image="img/cat-food__trendline.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__cat-care">
+            <div class="main__cat-care__label">
+                <div class="category-box">Уход</div>
+            </div>
+            <div class="main__cat-care__catalog">
+                <div class="cat-care__collar">
+                    <img src="img/cat-care__collar.jpg" alt="collar">
+                    <span>Ошейник для кошек, регулируемый</span>
+                    <strong>36,63 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="cat-collar"
+                        data-name="Ошейник для кошек, регулируемый"
+                        data-price="36.63"
+                        data-image="img/cat-care__collar.jpg">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="cat-care__toilet">
+                    <img src="img/cat-care__toilet.jpg" alt="toilet">
+                    <span>Туалет ZooExpress для кошек</span>
+                    <strong>42,23 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="cat-toilet"
+                        data-name="Туалет ZooExpress для кошек"
+                        data-price="42.23"
+                        data-image="img/cat-care__toilet.jpg">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="cat-care__savok">
+                    <img src="img/cat-care__savok.jpg" alt="savok">
+                    <span>Совок для кошачьего туалета с крупной сеткой</span>
+                    <strong>12,67 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="cat-scoop"
+                        data-name="Совок для кошачьего туалета"
+                        data-price="12.67"
+                        data-image="img/cat-care__savok.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/market.grsu.by">
+                <img src="img/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/grsu_grodno/">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+        </div>
+
+        <div class="phone-number">
+            <span>7788</span>
+        </div>
+
+        <div class="contact">
+            <div class="contact__number">
+                <span>МТС: +375 (33) 333-33-33</span>
+            </div>
+            <div class="contact__mail">
+                <span>E-mail: zoona@mail.ru</span>
+            </div>
+        </div>
+
+        <div class="address">
+            <span>ZOOna • г.Гродно, ул.Ожешко,22</span>
+        </div>
+
+        <div class="opening-hours">
+            <span>Время работы магазина: БЕЗ ВЫХОДНЫХ 10.00-20.00</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

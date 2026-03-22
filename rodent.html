@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>ZOOna. Грызуны</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__container">
+            <span class="header__logo">
+                <img src="img/logo.jpg" alt="ZOOna-товары для животных">
+            </span>
+            
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="header__home desktop-only">
+                <a href="index.html">
+                    <img src="img/home.png" alt="Главная">
+                </a>
+            </div>
+            
+            <div class="header__search desktop-only">
+                <input type="text" 
+                    id="searchInputDesktop" 
+                    placeholder="Я ищу..."
+                    autocomplete="off"
+                    readonly>
+            </div>
+            
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                            id="searchInputMain" 
+                            placeholder="Введите название товара..."
+                            autocomplete="off">
+                        <button type="button" class="search-close" id="searchCloseBtn">
+                            ✕
+                        </button>
+                    </form>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+            
+            <div class="header__user-container promotion desktop-only">
+                <a href="promotion.html">
+                    <img src="img/sales.png" alt="акции">
+                    <span>Акции</span>
+                </a>
+            </div>
+            
+            <div class="header__account desktop-only">
+                <a href="account.html">
+                    <img src="img/account.png" alt="Личный кабинет">
+                    <span>Личный кабинет</span>
+                </a>
+            </div>
+            
+            <div class="header__user-container cart desktop-only">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="корзина">
+                    <span>Корзина <span class="cart-count">0</span></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__content">
+                <div class="mobile-search">
+                    <input type="text" id="searchInputMobile" placeholder="Поиск товаров...">
+                    <button id="mobileSearchBtn">
+                        <img src="img/search.png" alt="поиск">
+                    </button>
+                </div>
+                
+                <div class="mobile-user-links">
+                    <a href="index.html" class="mobile-user-link">
+                        <img src="img/home.png" alt="Главная">
+                        <span>Главная</span>
+                    </a>
+                    <a href="promotion.html" class="mobile-user-link">
+                        <img src="img/sales.png" alt="акции">
+                        <span>Акции</span>
+                    </a>
+                    <a href="account.html" class="mobile-user-link">
+                        <img src="img/account.png" alt="Личный кабинет">
+                        <span>Личный кабинет</span>
+                    </a>
+                    <a href="cart.html" class="mobile-user-link">
+                        <img src="img/cart.png" alt="корзина">
+                        <span>Корзина <span class="cart-count">0</span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-categories">
+                    <a href="dog.html" class="mobile-category">
+                        <img src="img/icon-dog.jpg" alt="собаки">
+                        <span>Собаки</span>
+                    </a>
+                    <a href="cat.html" class="mobile-category">
+                        <img src="img/icon-cat.jpg" alt="кошки">
+                        <span>Кошки</span>
+                    </a>
+                    <a href="bird.html" class="mobile-category">
+                        <img src="img/icon-bird.jpg" alt="птицы">
+                        <span>Птицы</span>
+                    </a>
+                    <a href="rodent.html" class="mobile-category">
+                        <img src="img/icon-rodent.jpg" alt="грызуны">
+                        <span>Грызуны</span>
+                    </a>
+                    <a href="fish.html" class="mobile-category">
+                        <img src="img/icon-fish.jpg" alt="рыбки">
+                        <span>Рыбки</span>
+                    </a>
+                    <a href="pharmacy.html" class="mobile-category">
+                        <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                        <span>Ветаптека</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-contacts">
+                    <div class="mobile-phone">7788</div>
+                    <div class="mobile-contact">МТС: +375 (33) 333-33-33</div>
+                    <div class="mobile-email">zoona@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu__container desktop-only">
+        <div class="menu__dog">
+            <a href="dog.html">
+                <img src="img/icon-dog.jpg" alt="собаки">
+                <span>Собаки</span>
+            </a>
+        </div>
+        <div class="menu__cat">
+            <a href="cat.html">
+                <img src="img/icon-cat.jpg" alt="кошки">
+                <span>Кошки</span>
+            </a>
+        </div>
+        <div class="menu__bird">
+            <a href="bird.html">
+                <img src="img/icon-bird.jpg" alt="птицы">
+                <span>Птицы</span>
+            </a>
+        </div>
+        <div class="menu__rodent">
+            <a href="rodent.html">
+                <img src="img/icon-rodent.jpg" alt="грызуны">
+                <span>Грызуны</span>
+            </a>
+        </div>
+        <div class="menu__fish">
+            <a href="fish.html">
+                <img src="img/icon-fish.jpg" alt="рыбки">
+                <span>Рыбки</span>
+            </a>
+        </div>
+        <div class="menu__pharmacy">
+            <a href="pharmacy.html">
+                <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                <span>Ветаптека</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="main__rodent-food">
+            <div class="main__rodent-food__label">
+                <div class="category-box">Корм</div>
+            </div>
+            <div class="main__rodent-food__catalog">
+                <div class="rodent-food__verselelaga">
+                    <img src="img/rodent-food__verselelaga.jpg" alt="verselelaga">
+                    <span>Корм для грызунов и кроликов Crispy Snack Fibres 0,65 кг</span>
+                    <strong>21,63 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="versele-laga-fibres"
+                        data-name="Корм для грызунов и кроликов Crispy Snack Fibres 0,65 кг"
+                        data-price="21.63"
+                        data-image="img/rodent-food__verselelaga.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="rodent-food__mikemeals">
+                    <img src="img/rodent-food__mikemeals.jpg" alt="mikemeals">
+                    <span>Корм для хомяков MIKIMEALS 0,4 кг</span>
+                    <strong>9,59 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="mikimeals-hamster"
+                        data-name="Корм для хомяков MIKIMEALS 0,4 кг"
+                        data-price="9.59"
+                        data-image="img/rodent-food__mikemeals.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="rodent-food__bambini">
+                    <img src="img/rodent-food__bambini.jpg" alt="bambini">
+                    <span>Корм Bambini Pets для крыс и мышей 0,8 кг</span>
+                    <strong>17,12 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="bambini-rats-mice"
+                        data-name="Корм Bambini Pets для крыс и мышей 0,8 кг"
+                        data-price="17.12"
+                        data-image="img/rodent-food__bambini.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="rodent-food__gryzunok">
+                    <img src="img/rodent-food__gryzunok.jpg" alt="gryzunok">
+                    <span>Корм для шиншилл и кроликов Грызунок 2,5 кг</span>
+                    <strong>21,01 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="gryzunok-chinchilla"
+                        data-name="Корм для шиншилл и кроликов Грызунок 2,5 кг"
+                        data-price="21.01"
+                        data-image="img/rodent-food__gryzunok.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="rodent-food__happujungle">
+                    <img src="img/rodent-food__happujungle.jpg" alt="happujungle">
+                    <span>HAPPY JUNGLE prestige 8in1 Корм для крыс 0,9 кг</span>
+                    <strong>10,80 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="happy-jungle-rats"
+                        data-name="HAPPY JUNGLE prestige 8in1 Корм для крыс 0,9 кг"
+                        data-price="10.80"
+                        data-image="img/rodent-food__happujungle.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="rodent-food__littleone">
+                    <img src="img/rodent-food__littleone.jpg" alt="littleone">
+                    <span>Little One Травяные подушечки 0,1 кг</span>
+                    <strong>8,17 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="littleone-grass-pads"
+                        data-name="Little One Травяные подушечки 0,1 кг"
+                        data-price="8.17"
+                        data-image="img/rodent-food__littleone.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main__rodent-care">
+            <div class="main__rodent-care__label">
+                <div class="category-box">Уход</div>
+            </div>
+            <div class="main__rodent-care__catalog">
+                <div class="rodent-care__veda">
+                    <img src="img/rodent-care__veda.jpg" alt="veda">
+                    <span>Шампунь для грызунов Витаминный VEDA</span>
+                    <strong>5,21 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="veda-rodent-shampoo"
+                        data-name="Шампунь для грызунов Витаминный VEDA"
+                        data-price="5.21"
+                        data-image="img/rodent-care__veda.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="rodent-care__ilovemypet">
+                    <img src="img/rodent-care__ilovemypet.jpg" alt="ilovemypet">
+                    <span>I LOVE MY PET Шампунь для грызунов, 100 мл</span>
+                    <strong>14,08 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="ilovemypet-shampoo"
+                        data-name="I LOVE MY PET Шампунь для грызунов, 100 мл"
+                        data-price="14.08"
+                        data-image="img/rodent-care__ilovemypet.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="rodent-care__kormiks">
+                    <img src="img/rodent-care__kormiks.jpg" alt="kormiks">
+                    <span>Кукурузный наполнитель для грызунов Kormiks 10л</span>
+                    <strong>36,74 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="kormiks-corn-filler"
+                        data-name="Кукурузный наполнитель для грызунов Kormiks 10л"
+                        data-price="36.74"
+                        data-image="img/rodent-care__kormiks.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/market.grsu.by">
+                <img src="img/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/grsu_grodno/">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="phone-number">
+            <span>7788</span>
+        </div>
+        <div class="contact">
+            <div class="contact__number">
+                <span>МТС: +375 (33) 333-33-33</span>
+            </div>
+            <div class="contact__mail">
+                <span>E-mail: zoona@mail.ru</span>
+            </div>
+        </div>
+        <div class="address">
+            <span>ZOOna • г.Гродно, ул.Ожешко,22</span>
+        </div>
+        <div class="opening-hours">
+            <span>Время работы магазина: БЕЗ ВЫХОДНЫХ 10.00-20.00</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

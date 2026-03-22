@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>ZOOna. Собаки</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__container">
+            <span class="header__logo">
+                <img src="img/logo.jpg" alt="ZOOna-товары для животных">
+            </span>
+            
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="header__home desktop-only">
+                <a href="index.html">
+                    <img src="img/home.png" alt="Главная">
+                </a>
+            </div>
+            
+            <div class="header__search desktop-only">
+                <input type="text" 
+                    id="searchInputDesktop" 
+                    placeholder="Я ищу..."
+                    autocomplete="off"
+                    readonly>
+            </div>
+            
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                            id="searchInputMain" 
+                            placeholder="Введите название товара..."
+                            autocomplete="off">
+                        <button type="button" class="search-close" id="searchCloseBtn">
+                            ✕
+                        </button>
+                    </form>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+            
+            <div class="header__user-container promotion desktop-only">
+                <a href="promotion.html">
+                    <img src="img/sales.png" alt="акции">
+                    <span>Акции</span>
+                </a>
+            </div>
+            
+            <div class="header__account desktop-only">
+                <a href="account.html">
+                    <img src="img/account.png" alt="Личный кабинет">
+                    <span>Личный кабинет</span>
+                </a>
+            </div>
+            
+            <div class="header__user-container cart desktop-only">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="корзина">
+                    <span>Корзина <span class="cart-count">0</span></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__content">
+                <div class="mobile-search">
+                    <input type="text" id="searchInputMobile" placeholder="Поиск товаров...">
+                    <button id="mobileSearchBtn">
+                        <img src="img/search.png" alt="поиск">
+                    </button>
+                </div>
+                
+                <div class="mobile-user-links">
+                    <a href="index.html" class="mobile-user-link">
+                        <img src="img/home.png" alt="Главная">
+                        <span>Главная</span>
+                    </a>
+                    <a href="promotion.html" class="mobile-user-link">
+                        <img src="img/sales.png" alt="акции">
+                        <span>Акции</span>
+                    </a>
+                    <a href="account.html" class="mobile-user-link">
+                        <img src="img/account.png" alt="Личный кабинет">
+                        <span>Личный кабинет</span>
+                    </a>
+                    <a href="cart.html" class="mobile-user-link">
+                        <img src="img/cart.png" alt="корзина">
+                        <span>Корзина <span class="cart-count">0</span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-categories">
+                    <a href="dog.html" class="mobile-category">
+                        <img src="img/icon-dog.jpg" alt="собаки">
+                        <span>Собаки</span>
+                    </a>
+                    <a href="cat.html" class="mobile-category">
+                        <img src="img/icon-cat.jpg" alt="кошки">
+                        <span>Кошки</span>
+                    </a>
+                    <a href="bird.html" class="mobile-category">
+                        <img src="img/icon-bird.jpg" alt="птицы">
+                        <span>Птицы</span>
+                    </a>
+                    <a href="rodent.html" class="mobile-category">
+                        <img src="img/icon-rodent.jpg" alt="грызуны">
+                        <span>Грызуны</span>
+                    </a>
+                    <a href="fish.html" class="mobile-category">
+                        <img src="img/icon-fish.jpg" alt="рыбки">
+                        <span>Рыбки</span>
+                    </a>
+                    <a href="pharmacy.html" class="mobile-category">
+                        <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                        <span>Ветаптека</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-contacts">
+                    <div class="mobile-phone">7788</div>
+                    <div class="mobile-contact">МТС: +375 (33) 333-33-33</div>
+                    <div class="mobile-email">zoona@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu__container desktop-only">
+        <div class="menu__dog">
+            <a href="dog.html">
+                <img src="img/icon-dog.jpg" alt="собаки">
+                <span>Собаки</span>
+            </a>
+        </div>
+        <div class="menu__cat">
+            <a href="cat.html">
+                <img src="img/icon-cat.jpg" alt="кошки">
+                <span>Кошки</span>
+            </a>
+        </div>
+        <div class="menu__bird">
+            <a href="bird.html">
+                <img src="img/icon-bird.jpg" alt="птицы">
+                <span>Птицы</span>
+            </a>
+        </div>
+        <div class="menu__rodent">
+            <a href="rodent.html">
+                <img src="img/icon-rodent.jpg" alt="грызуны">
+                <span>Грызуны</span>
+            </a>
+        </div>
+        <div class="menu__fish">
+            <a href="fish.html">
+                <img src="img/icon-fish.jpg" alt="рыбки">
+                <span>Рыбки</span>
+            </a>
+        </div>
+        <div class="menu__pharmacy">
+            <a href="pharmacy.html">
+                <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                <span>Ветаптека</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="main__dog-food">
+            <div class="main__dog-food__label">
+                <div class="category-box">Корм</div>
+            </div>
+            <div class="main__dog-food__catalog">
+                <div class="dog-food__royalcanin">
+                    <img src="img/dog-food__royalcanin.jpg" alt="royalcanin">
+                    <span>Сухой корм Royal Canin Mini Adult 2,0 кг</span>
+                    <strong>50,23 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="royalcanin-mini-adult"
+                        data-name="Royal Canin Mini Adult 2,0 кг"
+                        data-price="50.23"
+                        data-image="img/dog-food__royalcanin.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="dog-food__vetlife">
+                    <img src="img/dog-food__vetlife.jpg" alt="vetlife">
+                    <span>Сухой корм FARMINA VET LIFE CANIN 2,0 кг</span>
+                    <strong>153,18 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="vetlife-canin"
+                        data-name="FARMINA VET LIFE CANIN 2,0 кг"
+                        data-price="153.18"
+                        data-image="img/dog-food__vetlife.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="dog-food__armando">
+                    <img src="img/dog-food__armando.jpg" alt="armando">
+                    <span>Сухой корм Armando 1,7 кг</span>
+                    <strong>18,13 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="armando-dog-food"
+                        data-name="Armando 1,7 кг"
+                        data-price="18.13"
+                        data-image="img/dog-food__armando.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="dog-food__brit">
+                    <img src="img/dog-food__brit.jpg" alt="brit">
+                    <span>Корм Brit Premium Dog Adult Medium 15,0 кг</span>
+                    <strong>176,45 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="brit-premium-medium"
+                        data-name="Brit Premium Dog Adult Medium 15,0 кг"
+                        data-price="176.45"
+                        data-image="img/dog-food__brit.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="dog-food__mamynat">
+                    <img src="img/dog-food__mamynat.jpg" alt="mamynat">
+                    <span>Сухой корм для собак MamyNat Puppy 20 кг</span>
+                    <strong>178,45 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="mamynat-puppy"
+                        data-name="MamyNat Puppy 20 кг"
+                        data-price="178.45"
+                        data-image="img/dog-food__mamynat.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="dog-food__gentledog">
+                    <img src="img/dog-food__gentledog.jpg" alt="gentledog">
+                    <span>Сухой корм для собак Pet's Brunch 14 кг</span>
+                    <strong>92,72 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="pets-brunch"
+                        data-name="Pet's Brunch 14 кг"
+                        data-price="92.72"
+                        data-image="img/dog-food__gentledog.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main__dog-care">
+            <div class="main__dog-care__label">
+                <div class="category-box">Уход</div>
+            </div>
+            <div class="main__dog-care__catalog">
+                <div class="dog-care__bowls">
+                    <img src="img/dog-care__bowls.jpg" alt="bowls">
+                    <span>Mr.Kranch Миски на подставке двойные</span>
+                    <strong>52,96 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="dog-bowls-mrkranch"
+                        data-name="Mr.Kranch Миски на подставке двойные"
+                        data-price="52.96"
+                        data-image="img/dog-care__bowls.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="dog-care__collar">
+                    <img src="img/dog-care__collar.jpg" alt="collar">
+                    <span>Ошейник для собак Ferplast Sport Dog</span>
+                    <strong>37,98 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="dog-collar-ferplast"
+                        data-name="Ошейник для собак Ferplast Sport Dog"
+                        data-price="37.98"
+                        data-image="img/dog-care__collar.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="dog-care__comb">
+                    <img src="img/dog-care__comb.jpg" alt="comb">
+                    <span>Расческа для собак DeLIGHT</span>
+                    <strong>31,14 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="dog-comb-delight"
+                        data-name="Расческа для собак DeLIGHT"
+                        data-price="31.14"
+                        data-image="img/dog-care__comb.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/market.grsu.by">
+                <img src="img/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/grsu_grodno/">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="phone-number">
+            <span>7788</span>
+        </div>
+        <div class="contact">
+            <div class="contact__number">
+                <span>МТС: +375 (33) 333-33-33</span>
+            </div>
+            <div class="contact__mail">
+                <span>E-mail: zoona@mail.ru</span>
+            </div>
+        </div>
+        <div class="address">
+            <span>ZOOna • г.Гродно, ул.Ожешко,22</span>
+        </div>
+        <div class="opening-hours">
+            <span>Время работы магазина: БЕЗ ВЫХОДНЫХ 10.00-20.00</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

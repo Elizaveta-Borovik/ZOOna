@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>ZOOna. Ветаптека</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__container">
+            <span class="header__logo">
+                <img src="img/logo.jpg" alt="ZOOna-товары для животных">
+            </span>
+            
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="header__home desktop-only">
+                <a href="index.html">
+                    <img src="img/home.png" alt="Главная">
+                </a>
+            </div>
+            
+            <div class="header__search desktop-only">
+                <input type="text" 
+                    id="searchInputDesktop" 
+                    placeholder="Я ищу..."
+                    autocomplete="off"
+                    readonly>
+            </div>
+            
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                            id="searchInputMain" 
+                            placeholder="Введите название товара..."
+                            autocomplete="off">
+                        <button type="button" class="search-close" id="searchCloseBtn">
+                            ✕
+                        </button>
+                    </form>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+            
+            <div class="header__user-container promotion desktop-only">
+                <a href="promotion.html">
+                    <img src="img/sales.png" alt="акции">
+                    <span>Акции</span>
+                </a>
+            </div>
+            
+            <div class="header__account desktop-only">
+                <a href="account.html">
+                    <img src="img/account.png" alt="Личный кабинет">
+                    <span>Личный кабинет</span>
+                </a>
+            </div>
+            
+            <div class="header__user-container cart desktop-only">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="корзина">
+                    <span>Корзина <span class="cart-count">0</span></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__content">
+                <div class="mobile-search">
+                    <input type="text" id="searchInputMobile" placeholder="Поиск товаров...">
+                    <button id="mobileSearchBtn">
+                        <img src="img/search.png" alt="поиск">
+                    </button>
+                </div>
+                
+                <div class="mobile-user-links">
+                    <a href="index.html" class="mobile-user-link">
+                        <img src="img/home.png" alt="Главная">
+                        <span>Главная</span>
+                    </a>
+                    <a href="promotion.html" class="mobile-user-link">
+                        <img src="img/sales.png" alt="акции">
+                        <span>Акции</span>
+                    </a>
+                    <a href="account.html" class="mobile-user-link">
+                        <img src="img/account.png" alt="Личный кабинет">
+                        <span>Личный кабинет</span>
+                    </a>
+                    <a href="cart.html" class="mobile-user-link">
+                        <img src="img/cart.png" alt="корзина">
+                        <span>Корзина <span class="cart-count">0</span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-categories">
+                    <a href="dog.html" class="mobile-category">
+                        <img src="img/icon-dog.jpg" alt="собаки">
+                        <span>Собаки</span>
+                    </a>
+                    <a href="cat.html" class="mobile-category">
+                        <img src="img/icon-cat.jpg" alt="кошки">
+                        <span>Кошки</span>
+                    </a>
+                    <a href="bird.html" class="mobile-category">
+                        <img src="img/icon-bird.jpg" alt="птицы">
+                        <span>Птицы</span>
+                    </a>
+                    <a href="rodent.html" class="mobile-category">
+                        <img src="img/icon-rodent.jpg" alt="грызуны">
+                        <span>Грызуны</span>
+                    </a>
+                    <a href="fish.html" class="mobile-category">
+                        <img src="img/icon-fish.jpg" alt="рыбки">
+                        <span>Рыбки</span>
+                    </a>
+                    <a href="pharmacy.html" class="mobile-category">
+                        <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                        <span>Ветаптека</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-contacts">
+                    <div class="mobile-phone">7788</div>
+                    <div class="mobile-contact">МТС: +375 (33) 333-33-33</div>
+                    <div class="mobile-email">zoona@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu__container desktop-only">
+        <div class="menu__dog">
+            <a href="dog.html">
+                <img src="img/icon-dog.jpg" alt="собаки">
+                <span>Собаки</span>
+            </a>
+        </div>
+        <div class="menu__cat">
+            <a href="cat.html">
+                <img src="img/icon-cat.jpg" alt="кошки">
+                <span>Кошки</span>
+            </a>
+        </div>
+        <div class="menu__bird">
+            <a href="bird.html">
+                <img src="img/icon-bird.jpg" alt="птицы">
+                <span>Птицы</span>
+            </a>
+        </div>
+        <div class="menu__rodent">
+            <a href="rodent.html">
+                <img src="img/icon-rodent.jpg" alt="грызуны">
+                <span>Грызуны</span>
+            </a>
+        </div>
+        <div class="menu__fish">
+            <a href="fish.html">
+                <img src="img/icon-fish.jpg" alt="рыбки">
+                <span>Рыбки</span>
+            </a>
+        </div>
+        <div class="menu__pharmacy">
+            <a href="pharmacy.html">
+                <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                <span>Ветаптека</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="main__pharmacy">
+            <div class="main__pharmacy__label">
+                <div class="category-box">Ветаптека</div>
+            </div>
+            <div class="main__pharmacy__catalog">
+                <div class="pharmacy__hollykalm">
+                    <img src="img/pharmacy__hollykalm.jpg" alt="hollykalm">
+                    <span>Холликалм 24 мг противорвотное средство для собак</span>
+                    <strong>56,79 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="hollykalm-anti-emetic"
+                        data-name="Холликалм 24 мг противорвотное средство для собак"
+                        data-price="56.79"
+                        data-image="img/pharmacy__hollykalm.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="pharmacy__citoderm">
+                    <img src="img/pharmacy__citoderm.jpg" alt="citoderm">
+                    <span>Цитодерм спрей противогрибковый+</span>
+                    <strong>20,40 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="citoderm-antifungal"
+                        data-name="Цитодерм спрей противогрибковый+"
+                        data-price="20.40"
+                        data-image="img/pharmacy__citoderm.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="pharmacy__vazopril">
+                    <img src="img/pharmacy__vazopril.jpg" alt="vazopril">
+                    <span>Вазоприл Таблетки для профилактики болезней сердца у собак и кошек</span>
+                    <strong>23,67 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="vazopril-heart"
+                        data-name="Вазоприл Таблетки для профилактики болезней сердца у собак и кошек"
+                        data-price="23.67"
+                        data-image="img/pharmacy__vazopril.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="pharmacy__gepatolux">
+                    <img src="img/pharmacy__gepatolux.jpg" alt="gepatolux">
+                    <span>Pchelodar Гепатолюкс Суспензия для Собак крупных пород</span>
+                    <strong>41,72 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="gepatolux-liver"
+                        data-name="Pchelodar Гепатолюкс Суспензия для Собак крупных пород"
+                        data-price="41.72"
+                        data-image="img/pharmacy__gepatolux.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="pharmacy__kvantum">
+                    <img src="img/pharmacy__kvantum.jpg" alt="kvantum">
+                    <span>Антигельминтный препарат для собак и кошек</span>
+                    <strong>21,33 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="kvantum-anthelmintic"
+                        data-name="Антигельминтный препарат для собак и кошек"
+                        data-price="21.33"
+                        data-image="img/pharmacy__kvantum.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="pharmacy__fleksoprofen">
+                    <img src="img/pharmacy__fleksoprofen.jpg" alt="fleksoprofen">
+                    <span>Флексоспрофен 2,5% раствор для инъекций</span>
+                    <strong>20,17 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="fleksoprofen-injection"
+                        data-name="Флексоспрофен 2,5% раствор для инъекций"
+                        data-price="20.17"
+                        data-image="img/pharmacy__fleksoprofen.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/market.grsu.by">
+                <img src="img/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/grsu_grodno/">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="phone-number">
+            <span>7788</span>
+        </div>
+        <div class="contact">
+            <div class="contact__number">
+                <span>МТС: +375 (33) 333-33-33</span>
+            </div>
+            <div class="contact__mail">
+                <span>E-mail: zoona@mail.ru</span>
+            </div>
+        </div>
+        <div class="address">
+            <span>ZOOna • г.Гродно, ул.Ожешко,22</span>
+        </div>
+        <div class="opening-hours">
+            <span>Время работы магазина: БЕЗ ВЫХОДНЫХ 10.00-20.00</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>ZOOna. Птицы</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__container">
+            <span class="header__logo">
+                <img src="img/logo.jpg" alt="ZOOna-товары для животных">
+            </span>
+            
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="header__home desktop-only">
+                <a href="index.html">
+                    <img src="img/home.png" alt="Главная">
+                </a>
+            </div>
+            
+            <div class="header__search desktop-only">
+                <input type="text" 
+                    id="searchInputDesktop" 
+                    placeholder="Я ищу..."
+                    autocomplete="off"
+                    readonly>
+            </div>
+            
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                            id="searchInputMain" 
+                            placeholder="Введите название товара..."
+                            autocomplete="off">
+                        <button type="button" class="search-close" id="searchCloseBtn">
+                            ✕
+                        </button>
+                    </form>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+            
+            <div class="header__user-container promotion desktop-only">
+                <a href="promotion.html">
+                    <img src="img/sales.png" alt="акции">
+                    <span>Акции</span>
+                </a>
+            </div>
+            
+            <div class="header__account desktop-only">
+                <a href="account.html">
+                    <img src="img/account.png" alt="Личный кабинет">
+                    <span>Личный кабинет</span>
+                </a>
+            </div>
+            
+            <div class="header__user-container cart desktop-only">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="корзина">
+                    <span>Корзина <span class="cart-count">0</span></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__content">
+                <div class="mobile-search">
+                    <input type="text" id="searchInputMobile" placeholder="Поиск товаров...">
+                    <button id="mobileSearchBtn">
+                        <img src="img/search.png" alt="поиск">
+                    </button>
+                </div>
+                
+                <div class="mobile-user-links">
+                    <a href="index.html" class="mobile-user-link">
+                        <img src="img/home.png" alt="Главная">
+                        <span>Главная</span>
+                    </a>
+                    <a href="promotion.html" class="mobile-user-link">
+                        <img src="img/sales.png" alt="акции">
+                        <span>Акции</span>
+                    </a>
+                    <a href="account.html" class="mobile-user-link">
+                        <img src="img/account.png" alt="Личный кабинет">
+                        <span>Личный кабинет</span>
+                    </a>
+                    <a href="cart.html" class="mobile-user-link">
+                        <img src="img/cart.png" alt="корзина">
+                        <span>Корзина <span class="cart-count">0</span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-categories">
+                    <a href="dog.html" class="mobile-category">
+                        <img src="img/icon-dog.jpg" alt="собаки">
+                        <span>Собаки</span>
+                    </a>
+                    <a href="cat.html" class="mobile-category">
+                        <img src="img/icon-cat.jpg" alt="кошки">
+                        <span>Кошки</span>
+                    </a>
+                    <a href="bird.html" class="mobile-category">
+                        <img src="img/icon-bird.jpg" alt="птицы">
+                        <span>Птицы</span>
+                    </a>
+                    <a href="rodent.html" class="mobile-category">
+                        <img src="img/icon-rodent.jpg" alt="грызуны">
+                        <span>Грызуны</span>
+                    </a>
+                    <a href="fish.html" class="mobile-category">
+                        <img src="img/icon-fish.jpg" alt="рыбки">
+                        <span>Рыбки</span>
+                    </a>
+                    <a href="pharmacy.html" class="mobile-category">
+                        <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                        <span>Ветаптека</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-contacts">
+                    <div class="mobile-phone">7788</div>
+                    <div class="mobile-contact">МТС: +375 (33) 333-33-33</div>
+                    <div class="mobile-email">zoona@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu__container desktop-only">
+        <div class="menu__dog">
+            <a href="dog.html">
+                <img src="img/icon-dog.jpg" alt="собаки">
+                <span>Собаки</span>
+            </a>
+        </div>
+        <div class="menu__cat">
+            <a href="cat.html">
+                <img src="img/icon-cat.jpg" alt="кошки">
+                <span>Кошки</span>
+            </a>
+        </div>
+        <div class="menu__bird">
+            <a href="bird.html">
+                <img src="img/icon-bird.jpg" alt="птицы">
+                <span>Птицы</span>
+            </a>
+        </div>
+        <div class="menu__rodent">
+            <a href="rodent.html">
+                <img src="img/icon-rodent.jpg" alt="грызуны">
+                <span>Грызуны</span>
+            </a>
+        </div>
+        <div class="menu__fish">
+            <a href="fish.html">
+                <img src="img/icon-fish.jpg" alt="рыбки">
+                <span>Рыбки</span>
+            </a>
+        </div>
+        <div class="menu__pharmacy">
+            <a href="pharmacy.html">
+                <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                <span>Ветаптека</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="main__bird-food">
+            <div class="main__bird-food__label">
+                <div class="category-box">Корм</div>
+            </div>
+            <div class="main__bird-food__catalog">
+                <div class="bird-food__rio">
+                    <img src="img/bird-food__rio.jpg" alt="rio">
+                    <span>RIO Корм для Волнистых попугайчиков 1,0 кг</span>
+                    <strong>11,63 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="rio-budgies"
+                        data-name="RIO Корм для Волнистых попугайчиков 1,0 кг"
+                        data-price="11.63"
+                        data-image="img/bird-food__rio.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="bird-food__prestigebudgies">
+                    <img src="img/bird-food__prestigebudgies.jpg" alt="prestigebudgies">
+                    <span>Корм Versele-Laga Prestige Budgies 1,0 кг</span>
+                    <strong>41,94 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="prestige-budgies"
+                        data-name="Versele-Laga Prestige Budgies 1,0 кг"
+                        data-price="41.94"
+                        data-image="img/bird-food__prestigebudgies.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="bird-food__prestigeloroparque">
+                    <img src="img/bird-food__prestigeloroparque.jpg" alt="prestigeloroparque">
+                    <span>Versele Laga Prestige Australian Parakeet Prestige 1,0 кг</span>
+                    <strong>54,13 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="prestige-parakeet"
+                        data-name="Versele Laga Prestige Australian Parakeet 1,0 кг"
+                        data-price="54.13"
+                        data-image="img/bird-food__prestigeloroparque.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="bird-food__grums">
+                    <img src="img/bird-food__grums.jpg" alt="grums">
+                    <span>GRUMS Корм для волнистых попугаев 0,8 кг</span>
+                    <strong>27,01 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="grums-budgies"
+                        data-name="GRUMS Корм для волнистых попугаев 0,8 кг"
+                        data-price="27.01"
+                        data-image="img/bird-food__grums.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="bird-food__grandmix">
+                    <img src="img/bird-food__grandmix.jpg" alt="grandmix">
+                    <span>PADOVAN Корм GrandMix pappagalli 0,6 кг</span>
+                    <strong>49,49 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="padovan-grandmix"
+                        data-name="PADOVAN Корм GrandMix pappagalli 0,6 кг"
+                        data-price="49.49"
+                        data-image="img/bird-food__grandmix.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="bird-food__triol">
+                    <img src="img/bird-food__triol.jpg" alt="triol">
+                    <span>TRIOL original Корм для крупных попугаев 0,45 кг</span>
+                    <strong>32,72 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="triol-parrots"
+                        data-name="TRIOL original Корм для крупных попугаев 0,45 кг"
+                        data-price="32.72"
+                        data-image="img/bird-food__triol.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main__bird-care">
+            <div class="main__bird-care__label">
+                <div class="category-box">Уход</div>
+            </div>
+            <div class="main__bird-care__catalog">
+                <div class="bird-care__zooflor">
+                    <img src="img/bird-care__zooflor.jpg" alt="zooflor">
+                    <span>Спрей для птиц от паразитов, ЗооФлор, 150 мл</span>
+                    <strong>14,24 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="zooflor-spray"
+                        data-name="Спрей для птиц от паразитов, ЗооФлор, 150 мл"
+                        data-price="14.24"
+                        data-image="img/bird-care__zooflor.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="bird-care__walnut">
+                    <img src="img/bird-care__walnut.jpg" alt="walnut">
+                    <span>Ликвидатор запаха для клеток птиц</span>
+                    <strong>12,96 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="bird-odor-eliminator"
+                        data-name="Ликвидатор запаха для клеток птиц"
+                        data-price="12.96"
+                        data-image="img/bird-care__walnut.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="bird-care__proxider">
+                    <img src="img/bird-care__proxider.jpg" alt="proxider">
+                    <span>Средство от пухоедов и пероедов PROXIDER</span>
+                    <strong>27,90 р.</strong>
+                    <button class="add-to-cart" 
+                        data-id="proxider-lice"
+                        data-name="Средство от пухоедов и пероедов PROXIDER"
+                        data-price="27.90"
+                        data-image="img/bird-care__proxider.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/market.grsu.by">
+                <img src="img/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/grsu_grodno/">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="phone-number">
+            <span>7788</span>
+        </div>
+        <div class="contact">
+            <div class="contact__number">
+                <span>МТС: +375 (33) 333-33-33</span>
+            </div>
+            <div class="contact__mail">
+                <span>E-mail: zoona@mail.ru</span>
+            </div>
+        </div>
+        <div class="address">
+            <span>ZOOna • г.Гродно, ул.Ожешко,22</span>
+        </div>
+        <div class="opening-hours">
+            <span>Время работы магазина: БЕЗ ВЫХОДНЫХ 10.00-20.00</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

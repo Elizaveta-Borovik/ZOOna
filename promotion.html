@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>ZOOna. Акции</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__container">
+            <span class="header__logo">
+                <img src="img/logo.jpg" alt="ZOOna-товары для животных">
+            </span>
+            
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="header__home desktop-only">
+                <a href="index.html">
+                    <img src="img/home.png" alt="Главная">
+                </a>
+            </div>
+            
+            <div class="header__search desktop-only">
+                <input type="text" 
+                    id="searchInputDesktop" 
+                    placeholder="Я ищу..."
+                    autocomplete="off"
+                    readonly>
+            </div>
+            
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                            id="searchInputMain" 
+                            placeholder="Введите название товара..."
+                            autocomplete="off">
+                        <button type="button" class="search-close" id="searchCloseBtn">
+                            ✕
+                        </button>
+                    </form>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+            
+            <div class="header__user-container promotion desktop-only">
+                <a href="promotion.html">
+                    <img src="img/sales.png" alt="акции">
+                    <span>Акции</span>
+                </a>
+            </div>
+            
+            <div class="header__account desktop-only">
+                <a href="account.html">
+                    <img src="img/account.png" alt="Личный кабинет">
+                    <span>Личный кабинет</span>
+                </a>
+            </div>
+            
+            <div class="header__user-container cart desktop-only">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="корзина">
+                    <span>Корзина <span class="cart-count">0</span></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__content">
+                <div class="mobile-search">
+                    <input type="text" id="searchInputMobile" placeholder="Поиск товаров...">
+                    <button id="mobileSearchBtn">
+                        <img src="img/search.png" alt="поиск">
+                    </button>
+                </div>
+                
+                <div class="mobile-user-links">
+                    <a href="index.html" class="mobile-user-link">
+                        <img src="img/home.png" alt="Главная">
+                        <span>Главная</span>
+                    </a>
+                    <a href="promotion.html" class="mobile-user-link">
+                        <img src="img/sales.png" alt="акции">
+                        <span>Акции</span>
+                    </a>
+                    <a href="account.html" class="mobile-user-link">
+                        <img src="img/account.png" alt="Личный кабинет">
+                        <span>Личный кабинет</span>
+                    </a>
+                    <a href="cart.html" class="mobile-user-link">
+                        <img src="img/cart.png" alt="корзина">
+                        <span>Корзина <span class="cart-count">0</span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-categories">
+                    <a href="dog.html" class="mobile-category">
+                        <img src="img/icon-dog.jpg" alt="собаки">
+                        <span>Собаки</span>
+                    </a>
+                    <a href="cat.html" class="mobile-category">
+                        <img src="img/icon-cat.jpg" alt="кошки">
+                        <span>Кошки</span>
+                    </a>
+                    <a href="bird.html" class="mobile-category">
+                        <img src="img/icon-bird.jpg" alt="птицы">
+                        <span>Птицы</span>
+                    </a>
+                    <a href="rodent.html" class="mobile-category">
+                        <img src="img/icon-rodent.jpg" alt="грызуны">
+                        <span>Грызуны</span>
+                    </a>
+                    <a href="fish.html" class="mobile-category">
+                        <img src="img/icon-fish.jpg" alt="рыбки">
+                        <span>Рыбки</span>
+                    </a>
+                    <a href="pharmacy.html" class="mobile-category">
+                        <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                        <span>Ветаптека</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-contacts">
+                    <div class="mobile-phone">7788</div>
+                    <div class="mobile-contact">МТС: +375 (33) 333-33-33</div>
+                    <div class="mobile-email">zoona@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu__container desktop-only">
+        <div class="menu__dog">
+            <a href="dog.html">
+                <img src="img/icon-dog.jpg" alt="собаки">
+                <span>Собаки</span>
+            </a>
+        </div>
+        <div class="menu__cat">
+            <a href="cat.html">
+                <img src="img/icon-cat.jpg" alt="кошки">
+                <span>Кошки</span>
+            </a>
+        </div>
+        <div class="menu__bird">
+            <a href="bird.html">
+                <img src="img/icon-bird.jpg" alt="птицы">
+                <span>Птицы</span>
+            </a>
+        </div>
+        <div class="menu__rodent">
+            <a href="rodent.html">
+                <img src="img/icon-rodent.jpg" alt="грызуны">
+                <span>Грызуны</span>
+            </a>
+        </div>
+        <div class="menu__fish">
+            <a href="fish.html">
+                <img src="img/icon-fish.jpg" alt="рыбки">
+                <span>Рыбки</span>
+            </a>
+        </div>
+        <div class="menu__pharmacy">
+            <a href="pharmacy.html">
+                <img src="img/icon-pharmacy.jpg" alt="ветаптека">
+                <span>Ветаптека</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="main__promotion">
+            <div class="main__promotion__label">
+                <div class="category-box">Акции</div>
+            </div>
+            <div class="main__promotion__catalog">
+                <div class="promotion__whiskas">
+                    <img src="img/promotion__whiskas.jpg" alt="whiskas">
+                    <span>Влажный корм для кошек Whiskas</span>
+                    <button class="add-to-cart" 
+                        data-id="whiskas-promo"
+                        data-name="Влажный корм для кошек Whiskas"
+                        data-price="1.09"
+                        data-image="img/promotion__whiskas.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__gourmet">
+                    <img src="img/promotion__gourmet.jpg" alt="gourmet">
+                    <span>Влажный корм для кошек Gourmet Perle индейка в соусе</span>
+                    <button class="add-to-cart" 
+                        data-id="gourmet-promo"
+                        data-name="Влажный корм для кошек Gourmet Perle индейка в соусе"
+                        data-price="1.69"
+                        data-image="img/promotion__gourmet.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__kitekat">
+                    <img src="img/promotion__kitekat.jpg" alt="kitekat">
+                    <span>Сухой корм KITEKAT</span>
+                    <button class="add-to-cart" 
+                        data-id="kitekat-promo"
+                        data-name="Сухой корм KITEKAT"
+                        data-price="7.99"
+                        data-image="img/promotion__kitekat.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__lavender6l">
+                    <img src="img/promotion__lavender6l.jpg" alt="lavender6l">
+                    <span>For Cats Наполнитель Силикагелевый Впитывающий Лаванда</span>
+                    <button class="add-to-cart" 
+                        data-id="lavender-6l"
+                        data-name="For Cats Наполнитель Силикагелевый Впитывающий Лаванда"
+                        data-price="18.99"
+                        data-image="img/promotion__lavender6l.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__lavender4l">
+                    <img src="img/promotion__lavender4l.jpg" alt="lavender4l">
+                    <span>Наполнитель для кошачьего туалета "Лаванда"</span>
+                    <button class="add-to-cart" 
+                        data-id="lavender-4l"
+                        data-name="Наполнитель для кошачьего туалета 'Лаванда'"
+                        data-price="15.99"
+                        data-image="img/promotion__lavender4l.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__proplandog">
+                    <img src="img/promotion__proplandog.jpg" alt="proplandog">
+                    <span>Корм для собак Proplan</span>
+                    <button class="add-to-cart" 
+                        data-id="proplan-dog"
+                        data-name="Корм для собак Proplan"
+                        data-price="17.99"
+                        data-image="img/promotion__proplandog.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__bentik">
+                    <img src="img/promotion__bentik.jpg" alt="bentik">
+                    <span>Бентонитовый наполнитель для кошек</span>
+                    <button class="add-to-cart" 
+                        data-id="bentik-filler"
+                        data-name="Бентонитовый наполнитель для кошек"
+                        data-price="16.99"
+                        data-image="img/promotion__bentik.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__sirius">
+                    <img src="img/promotion__sirius.jpg" alt="sirius">
+                    <span>Сухой корм Sirius для стерилизованных кошек с уткой и клюквой</span>
+                    <button class="add-to-cart" 
+                        data-id="sirius-cat"
+                        data-name="Сухой корм Sirius для стерилизованных кошек с уткой и клюквой"
+                        data-price="15.99"
+                        data-image="img/promotion__sirius.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__proplancat">
+                    <img src="img/promotion__proplancat.jpg" alt="proplancat">
+                    <span>Сухой корм PRO PLAN CAT STERILISED RENAL PLUS TURKEY</span>
+                    <button class="add-to-cart" 
+                        data-id="proplan-cat-sterilized"
+                        data-name="Сухой корм PRO PLAN CAT STERILISED RENAL PLUS TURKEY"
+                        data-price="25.99"
+                        data-image="img/promotion__proplancat.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__brit">
+                    <img src="img/promotion__brit.jpg" alt="brit">
+                    <span>Сухой корм Brit Premium Dog Adult Medium</span>
+                    <button class="add-to-cart" 
+                        data-id="brit-dog-medium"
+                        data-name="Сухой корм Brit Premium Dog Adult Medium"
+                        data-price="11.79"
+                        data-image="img/promotion__brit.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__milprazon">
+                    <img src="img/promotion__milprazon.jpg" alt="milprazon">
+                    <span>Милпразон таблетки для кошек и собак</span>
+                    <button class="add-to-cart" 
+                        data-id="milprazon-tablets"
+                        data-name="Милпразон таблетки для кошек и собак"
+                        data-price="10.99"
+                        data-image="img/promotion__milprazon.jpg">
+                        В корзину
+                    </button>
+                </div>
+                <div class="promotion__selafort">
+                    <img src="img/promotion__selafort.jpg" alt="selafort">
+                    <span>Селафорт таблетки от клещей</span>
+                    <button class="add-to-cart" 
+                        data-id="selafort-tick"
+                        data-name="Селафорт таблетки от клещей"
+                        data-price="21.99"
+                        data-image="img/promotion__selafort.jpg">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/market.grsu.by">
+                <img src="img/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/grsu_grodno/">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="phone-number">
+            <span>7788</span>
+        </div>
+        <div class="contact">
+            <div class="contact__number">
+                <span>МТС: +375 (33) 333-33-33</span>
+            </div>
+            <div class="contact__mail">
+                <span>E-mail: zoona@mail.ru</span>
+            </div>
+        </div>
+        <div class="address">
+            <span>ZOOna • г.Гродно, ул.Ожешко,22</span>
+        </div>
+        <div class="opening-hours">
+            <span>Время работы магазина: БЕЗ ВЫХОДНЫХ 10.00-20.00</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
